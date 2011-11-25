@@ -104,9 +104,7 @@ hr {
 /* Tables
 /*----------------------------------------------------------------------*/
 
-table{
-	background-image:url(images/paper_01.png);
-}
+
 table td, table th{
 	border-color:#dddddd #e7e7e7 #dddddd #e7e7e7;
 }
