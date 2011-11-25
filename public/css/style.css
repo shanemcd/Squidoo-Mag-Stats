@@ -2,20 +2,7 @@
            Custom Styles
 *************************************/
 
-#data{
-	float: left;
 
-}
-
-#lineChart{
-	float: left;
-	margin-bottom: 20px;
-	padding-right: 15px;
-}
-
-#pieChart{
-	float: left;
-}
 
 /************************************
          End Custom Styles
@@ -529,34 +516,73 @@ h2, h3 {
 }
 @media only screen and (min-width: 480px) {
 
+#lineChart{
+	width: 100%;
+}
 
+#pieChart{
+	width: 100%;
+}
+
+#data{
+	width: 100%
+}
 
 }
 @media only screen and (min-width: 600px) {
 
+#lineChart{
+	float: left;
+	width: 45%;
+}
+
+#pieChart{
+	float: right;
+	width: 45%;
+}
+
+#data{
+	width: 100%;
+}
 
 }
 @media only screen and (min-width: 768px) {
 
+#lineChart{
+	float: left;
+	width: 45%;
+}
+
+#pieChart{
+	float: left;
+	width: 45%;
+}
+
+#data{
+	width: 100%
+}
 
 }
 @media only screen and (min-width: 992px) {
 
-
-}
-@media only screen and (min-width: 1382px) {
-
 #lineChart{
+	float: left;
 	width: 30%;
 }
 
 #pieChart{
+	float: left;
 	width: 30%;
 }
 
 #data{
 	width: 30%
 }
+
+}
+@media only screen and (min-width: 1382px) {
+
+
 
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
