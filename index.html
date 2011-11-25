@@ -1,0 +1,210 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+
+<title>320 and Up Version</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width" />
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="charts/css/style.css">
+<link rel="stylesheet" href="css/light/theme.css">
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- JavaScript -->
+<script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+<!-- For iPhone 4 -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+<!-- For iPad 1-->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+<!-- For iPhone 3G, iPod Touch and Android -->
+<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+
+<!--iOS. Delete if not required -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-startup-image" href="img/splash.png">
+
+<!-- http://t.co/y1jPVnT -->
+<link rel="canonical" href="/">
+</head>
+
+<body class="clearfix">
+
+<header role="banner">
+<h1>Squidoo Mag Stats</h1>
+</header>
+
+<div class="content clearfix">
+
+<div role="main">
+	<section id="content">
+
+	
+		<section id="lineChart">
+			<h3>Line Charts</h3>
+			<table class="chart">
+									<thead>
+										<tr>
+											<th></th>
+											<th>Label 1</th>
+											<th>Label 2</th>
+											<th>Label 3</th>
+											<th>Label 4</th>
+											<th>Label 5</th>
+											<th>Label 6</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>First Label</th>
+											<td>48</td>
+											<td>125</td>
+											<td>159</td>
+											<td>147</td>
+											<td>154</td>
+											<td>114</td>
+										</tr>
+										<tr>
+											<th>Second Label</th>
+											<td>8</td>
+											<td>27</td>
+											<td>25</td>
+											<td>79</td>
+											<td>47</td>
+											<td>59</td>
+										</tr>
+										<tr>
+											<th>Third Label</th>
+											<td>28</td>
+											<td>56</td>
+											<td>98</td>
+											<td>112</td>
+											<td>87</td>
+											<td>26</td>
+										</tr>
+										<tr>
+											<th>Fourth Label</th>
+											<td>38</td>
+											<td>43</td>
+											<td>69</td>
+											<td>54</td>
+											<td>16</td>
+											<td>16</td>
+										</tr>
+									</tbody>
+								</table>
+		</section>
+		<section id="pieChart">
+			<h3>Pie Charts</h3>
+			<table class="chart" data-type="pie">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Label 1</th>
+						<th>Label 2</th>
+						<th>Label 3</th>
+						<th>Label 4</th>
+						<th>Label 5</th>
+						<th>Label 6</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>First Label</th>
+						<td>48</td>
+						<td>125</td>
+						<td>159</td>
+						<td>147</td>
+						<td>154</td>
+						<td>114</td>
+					</tr>
+					<tr>
+						<th>Second Label</th>
+						<td>8</td>
+						<td>27</td>
+						<td>25</td>
+						<td>79</td>
+						<td>47</td>
+						<td>59</td>
+					</tr>
+					<tr>
+						<th>Third Label</th>
+						<td>28</td>
+						<td>56</td>
+						<td>98</td>
+						<td>112</td>
+						<td>87</td>
+						<td>26</td>
+					</tr>
+					<tr>
+						<th>Fourth Label</th>
+						<td>38</td>
+						<td>43</td>
+						<td>69</td>
+						<td>54</td>
+						<td>16</td>
+						<td>16</td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</section>
+	</section>
+</div>
+
+</div>
+
+<!-- Scripts -->
+
+<!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- some basic functions -->
+  <script src="charts/js/functions.js"></script>
+  	
+  <!-- all Third Party Plugins and Whitelabel Plugins -->
+
+  
+  <!-- configuration to overwrite settings -->
+  <script src="charts/js/config.js"></script>
+   <script src="charts/js/combined_plugins.js"></script>
+  	
+  <!-- the script which handles all the access to plugins etc... -->
+  <script src="charts/js/script.js"></script>
+  <!-- end scripts-->
+
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/imgsizer.js"></script>
+<![endif]-->
+
+<script>
+// iOS scale bug fix
+MBP.scaleFix();
+
+// Respond.js
+yepnope({
+	test : Modernizr.mq('(only all)'),
+	nope : ['js/libs/respond.min.js']
+});
+</script>
+
+
+</body>
+</html>
