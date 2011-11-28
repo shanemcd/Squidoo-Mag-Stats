@@ -2,9 +2,25 @@
            Custom Styles
 *************************************/
 
-header h1{
-	padding: 0;
-	margin: 0;
+.content{
+	max-width: 980px;
+	margin : 0 auto;
+}
+
+header{
+	background-color: #000;
+	color: #fff;
+}
+
+#totalVists{
+	background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 100%); 
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
+			box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
+			-webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
+			-moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+			margin: 0 0 20px 0;	
+			
 }
 
 /************************************
@@ -67,11 +83,6 @@ html {
     background: #ffffff;
     font-size: 62.5%;
 }
-
-body { 
-padding-top: 20px;
-margin : 0 auto;
-width : 90%/* 252px */; }
 
 button, input, select, textarea {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -520,67 +531,50 @@ h2, h3 {
 }
 @media only screen and (min-width: 480px) {
 
-#lineChart{
+#totalVists{
 	width: 100%;
+	float: none;
 }
 
-#pieChart{
+#traffic{
 	width: 100%;
-}
-
-#data{
-	width: 100%
+	float: none;
 }
 
 }
 @media only screen and (min-width: 600px) {
 
-#lineChart{
-	float: left;
-	width: 45%;
-}
 
-#pieChart{
-	float: right;
-	width: 45%;
-}
-
-#data{
-	width: 100%;
-}
 
 }
 @media only screen and (min-width: 768px) {
 
-#lineChart{
+#totalVists{
+	max-width: 50%;
+	background-color: white;
 	float: left;
-	width: 45%;
 }
 
-#pieChart{
+#traffic{
+	max-width: 40%;
 	float: right;
-	width: 45%;
 }
 
-#data{
-	width: 100%
-}
 
 }
 @media only screen and (min-width: 992px) {
 
-#lineChart{
+#totalVists{
+	max-width: 50%;
+	background-color: white;
 	float: left;
-	width: 30%;
 }
 
-#pieChart{
-	float: left;
-	width: 30%;
+#traffic{
+	max-width: 40%;
+	float: right;
 }
 
-#data{
-	width: 30%
 }
 
 }

@@ -3,72 +3,7 @@ $(document).ready(function() {
 	
 	//for Caching
 	var $content = $('#content');
-	
-		/*----------------------------------------------------------------------*/
-		/* preload images
-		/*----------------------------------------------------------------------*/
 		
-		//$.preload();
-		
-		/*----------------------------------------------------------------------*/
-		/* Widgets
-		/*----------------------------------------------------------------------*/
-		
-		$content.find('div.widgets').wl_Widget();
-		/*----------------------------------------------------------------------*/
-		/* All Form Plugins
-		/*----------------------------------------------------------------------*/
-		
-		//Integers and decimals
-		$content.find('input[type=number].integer').wl_Number();
-		$content.find('input[type=number].decimal').wl_Number({decimals:2,step:0.5});
-		
-		//Date and Time fields
-		$content.find('input.date, div.date').wl_Date();
-		$content.find('input.time').wl_Time();
-		
-		//Autocompletes (source is required)
-		$content.find('input.autocomplete').wl_Autocomplete({
-			source: ["ActionScript","AppleScript","Asp","BASIC","C","C++","Clojure","COBOL","ColdFusion","Erlang","Fortran","Groovy","Haskell","Java","JavaScript","Lisp","Perl","PHP","Python","Ruby","Scala","Scheme"]
-		});
-		
-		//Elastic textareas (autogrow)
-		$content.find('textarea[data-autogrow]').elastic();
-		//WYSIWYG Editor
-		$content.find('textarea.html').wl_Editor();
-		
-		//Validation
-		$content.find('input[data-regex]').wl_Valid();
-		$content.find('input[type=email]').wl_Mail();
-		$content.find('input[type=url]').wl_URL();
-
-		//File Upload
-		$content.find('input[type=file]').wl_File();
-
-		//Password and Color
-		$content.find('input[type=password]').wl_Password();
-		$content.find('input.color').wl_Color();
-		
-		//Sliders
-		$content.find('div.slider').wl_Slider();
-		
-		//Multiselects
-		$content.find('select[multiple]').wl_Multiselect();
-		
-		//The Form itself
-		$content.find('form').wl_Form();
-		
-		/*----------------------------------------------------------------------*/
-		/* Alert boxes
-		/*----------------------------------------------------------------------*/
-		
-		$content.find('div.alert').wl_Alert();
-		
-		/*----------------------------------------------------------------------*/
-		/* Breadcrumb
-		/*----------------------------------------------------------------------*/
-		
-		$content.find('ul.breadcrumb').wl_Breadcrumb();
 		
 		/*----------------------------------------------------------------------*/
 		/* datatable plugin
@@ -79,14 +14,6 @@ $(document).ready(function() {
 		});
 		
 		/*----------------------------------------------------------------------*/
-		/* uniform plugin && checkbox plugin (since 1.3.2)
-		/* uniform plugin causes some issues on checkboxes and radios
-		/*----------------------------------------------------------------------*/
-		
-		$("select, input[type=file]").not('select[multiple]').uniform();
-		$('input:checkbox, input:radio').checkbox();
-		
-		/*----------------------------------------------------------------------*/
 		/* Charts
 		/*----------------------------------------------------------------------*/
 
@@ -95,57 +22,6 @@ $(document).ready(function() {
 				$.msg("value is "+value+" from "+legend+" at "+label+" ("+id+")",{header:'Custom Callback'});
 			}
 		});
-		
-		/*----------------------------------------------------------------------*/
-		/* Fileexplorer
-		/*----------------------------------------------------------------------*/
-
-		$content.find('div.fileexplorer').wl_Fileexplorer();
-		
-		
-		/*----------------------------------------------------------------------*/
-		/* Calendar (read http://arshaw.com/fullcalendar/docs/ for more info!)
-		/*----------------------------------------------------------------------*/
-		
-		$content.find('div.calendar').wl_Calendar({
-			eventSources: [
-					{
-						url: 'http://www.google.com/calendar/feeds/usa__en%40holiday.calendar.google.com/public/basic'
-					},{
-						events: [ // put the array in the `events` property
-							{
-								title  : 'Fixed Event',
-								start  : '2011-11-01'
-							},
-							{
-								title  : 'long fixed Event',
-								start  : '2011-11-06',
-								end    : '2011-11-14'
-							}
-						],
-						color: '#f0a8a8',     // an option!
-						textColor: '#ffffff' // an option!
-					},{
-						events: [ // put the array in the `events` property
-							{
-								title  : 'Editable',
-								start  : '2011-11-09 12:30:00'
-							}
-						],
-						editable:true,
-						color: '#a2e8a2',     // an option!
-						textColor: '#ffffff' // an option!
-					}		
-					// any other event sources...
-			
-				]
-			});
-		
-		/*----------------------------------------------------------------------*/
-		/* Gallery
-		/*----------------------------------------------------------------------*/
-		
-		$content.find('ul.gallery').wl_Gallery();
 		
 		
 		/*----------------------------------------------------------------------*/

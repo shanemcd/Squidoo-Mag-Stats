@@ -40,16 +40,73 @@
 <body class="clearfix">
 
 <header role="banner">
-<h1>Squidoo Mag Stats</h1>
+<h1>Squidoo Magazine Stats Dashboard</h1>
 </header>
 
 <div class="content clearfix">
-
+<h2>GoodVeg Stats</h2>
 <div role="main">
 	<section id="content">
-
 	
-		<section id="lineChart">
+		<section id="totalVists">
+			<h3>Total Visits</h3>
+			<div id="pieChart">
+			<table class="chart" data-type="pie">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Label 1</th>
+						<th>Label 2</th>
+						<th>Label 3</th>
+						<th>Label 4</th>
+						<th>Label 5</th>
+						<th>Label 6</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>First Label</th>
+						<td>48</td>
+						<td>125</td>
+						<td>159</td>
+						<td>147</td>
+						<td>154</td>
+						<td>114</td>
+					</tr>
+					<tr>
+						<th>Second Label</th>
+						<td>8</td>
+						<td>27</td>
+						<td>25</td>
+						<td>79</td>
+						<td>47</td>
+						<td>59</td>
+					</tr>
+					<tr>
+						<th>Third Label</th>
+						<td>28</td>
+						<td>56</td>
+						<td>98</td>
+						<td>112</td>
+						<td>87</td>
+						<td>26</td>
+					</tr>
+					<tr>
+						<th>Fourth Label</th>
+						<td>38</td>
+						<td>43</td>
+						<td>69</td>
+						<td>54</td>
+						<td>16</td>
+						<td>16</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		</section>
+		
+		<section id="traffic">
+			<div id="lineChart">
 			<h3>Line Charts</h3>
 			<table class="chart">
 									<thead>
@@ -102,94 +159,31 @@
 										</tr>
 									</tbody>
 								</table>
+		</div>
 		</section>
-		<section id="pieChart">
-			<h3>Pie Charts</h3>
-			<table class="chart" data-type="pie">
-				<thead>
-					<tr>
-						<th></th>
-						<th>Label 1</th>
-						<th>Label 2</th>
-						<th>Label 3</th>
-						<th>Label 4</th>
-						<th>Label 5</th>
-						<th>Label 6</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th>First Label</th>
-						<td>48</td>
-						<td>125</td>
-						<td>159</td>
-						<td>147</td>
-						<td>154</td>
-						<td>114</td>
-					</tr>
-					<tr>
-						<th>Second Label</th>
-						<td>8</td>
-						<td>27</td>
-						<td>25</td>
-						<td>79</td>
-						<td>47</td>
-						<td>59</td>
-					</tr>
-					<tr>
-						<th>Third Label</th>
-						<td>28</td>
-						<td>56</td>
-						<td>98</td>
-						<td>112</td>
-						<td>87</td>
-						<td>26</td>
-					</tr>
-					<tr>
-						<th>Fourth Label</th>
-						<td>38</td>
-						<td>43</td>
-						<td>69</td>
-						<td>54</td>
-						<td>16</td>
-						<td>16</td>
-					</tr>
-				</tbody>
-			</table>
-			
-		</section>
+		
 	</section>
 </div>
-
 </div>
-
-<!-- Scripts -->
 
 <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-  	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
-
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+  		
   <!-- some basic functions -->
   <script src="charts/js/functions.js"></script>
-  	
-  <!-- all Third Party Plugins and Whitelabel Plugins -->
-
-  
-  <!-- configuration to overwrite settings -->
-  <script src="charts/js/config.js"></script>
-   <script src="charts/js/combined_plugins.js"></script>
-  	
-  <!-- the script which handles all the access to plugins etc... -->
-  <script src="charts/js/script.js"></script>
-  <!-- end scripts-->
-
-
+  <script src="charts/js/plugins.js"></script>
+  <script src="charts/js/flot.js"></script>
+	<script src="charts/js/datatables.js"></script>
+	<script src="charts/js/wl_Chart.js"></script>
+	<script src="charts/js/wl_Widget.js"></script>
+ 	<script src="charts/js/config.js"></script>
+	<!-- the script which handles all the access to plugins etc... -->
+	<script defer src="charts/js/script.js"></script>
+	 <!-- end scripts-->
+	
 <!--[if (lt IE 9) & (!IEMobile)]>
 <script src="js/libs/imgsizer.js"></script>
 <![endif]-->
