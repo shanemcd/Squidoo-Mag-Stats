@@ -51,10 +51,10 @@
 	<section id="content" class="clearfix">	
 	
 	<dl class="nice tabs">
-	        <dd><a href="index.php" class="active">Visitors</a></dd>
-	        <dd><a href="popular.php">Popular Content</a></dd>
-	        <dd><a href="social.php">Social Engagement</a></dd>
-	        <dd><a href="traffic.php">Traffic Sources</a></dd>
+	        <dd><a href="index.html" class="active">Visitors</a></dd>
+	        <dd><a href="popular.html">Popular Content</a></dd>
+	        <dd><a href="social.html">Social Engagement</a></dd>
+	        <dd><a href="traffic.html">Traffic Sources</a></dd>
 	      </dl>	
 	
 		<div id="leftColumn">
@@ -77,7 +77,7 @@
 					</div>
 				</div>
 				<div class="graph" >
-					<table class="chart" data-type="pie" data-legend="true">
+					<table class="chart" data-type="pie" data-legend="false">
 				<thead>
 					<tr>
 						<th></th>
@@ -208,182 +208,214 @@
 		</div>
 
 		<div id="rightColumn">
-			
+			<div class="trafficGraph">
 				<dl class="tabs">
-				        <dd><a href="#simple1" class="active">Combined Traffic</a></dd>
-				        <dd><a href="#simple2">Magazine</a></dd>
-				        <dd><a href="#simple3">Lenses</a></dd>
-				      </dl>
+	        <dd><a href="#simple1" class="active">Combined Traffic</a></dd>
+	        <dd><a href="#simple2">Magazine</a></dd>
+	        <dd><a href="#simple3">Lenses</a></dd>
+	      </dl>
 				
-				      <ul class="tabs-content">
-				        <li class="active" id="simple1Tab">
-				          <span class="tab-title">All Traffic</span>
-				          <table class="chart" data-points="true" data-fill="true" data-line-width="1" data-legend="false" data-stack="true" data-tooltip-gravity="s" data-tooltip-pattern="This is a custom Tooltip Pattern. Use placeholders (%n) to include data: %1 or '%3'">
-				          						<thead>
-				          							<tr>
-				          								<th></th>
-				          								<th>Label 1</th>
-				          								<th>Label 2</th>
-				          								<th>Label 3</th>
-				          								<th>Label 4</th>
-				          								<th>Label 5</th>
-				          								<th>Label 6</th>
-				          							</tr>
-				          						</thead>
-				          						<tbody>
-				          							<tr>
-				          								<th>First Label</th>
-				          								<td>48</td>
-				          								<td>125</td>
-				          								<td>159</td>
-				          								<td>147</td>
-				          								<td>154</td>
-				          								<td>114</td>
-				          							</tr>
-				          							<tr>
-				          								<th>Second Label</th>
-				          								<td>8</td>
-				          								<td>27</td>
-				          								<td>25</td>
-				          								<td>79</td>
-				          								<td>47</td>
-				          								<td>59</td>
-				          							</tr>
-				          							<tr>
-				          								<th>Third Label</th>
-				          								<td>28</td>
-				          								<td>56</td>
-				          								<td>98</td>
-				          								<td>112</td>
-				          								<td>87</td>
-				          								<td>26</td>
-				          							</tr>
-				          							<tr>
-				          								<th>Fourth Label</th>
-				          								<td>38</td>
-				          								<td>43</td>
-				          								<td>69</td>
-				          								<td>54</td>
-				          								<td>16</td>
-				          								<td>16</td>
-				          							</tr>
-				          						</tbody>
-				          					</table>      
-				        </li>
-				        <li id="simple2Tab">
-				        <div id="placeholder">
-				          <span class="tab-title">Articles Traffic</span>
-				          
-				          <table class="chart" data-points="true" data-fill="true" data-line-width="1" data-legend="false" data-stack="true" data-tooltip-gravity="s" data-tooltip-pattern="This is a custom Tooltip Pattern. Use placeholders (%n) to include data: %1 or '%3'">
-				          						<thead>
-				          							<tr>
-				          								<th></th>
-				          								<th>Label 1</th>
-				          								<th>Label 2</th>
-				          								<th>Label 3</th>
-				          								<th>Label 4</th>
-				          								<th>Label 5</th>
-				          								<th>Label 6</th>
-				          							</tr>
-				          						</thead>
-				          						<tbody>
-				          							<tr>
-				          								<th>First Label</th>
-				          								<td>48</td>
-				          								<td>125</td>
-				          								<td>159</td>
-				          								<td>147</td>
-				          								<td>154</td>
-				          								<td>114</td>
-				          							</tr>
-				          							<tr>
-				          								<th>Second Label</th>
-				          								<td>8</td>
-				          								<td>27</td>
-				          								<td>25</td>
-				          								<td>79</td>
-				          								<td>47</td>
-				          								<td>59</td>
-				          							</tr>
-				          							<tr>
-				          								<th>Third Label</th>
-				          								<td>28</td>
-				          								<td>56</td>
-				          								<td>98</td>
-				          								<td>112</td>
-				          								<td>87</td>
-				          								<td>26</td>
-				          							</tr>
-				          							<tr>
-				          								<th>Fourth Label</th>
-				          								<td>38</td>
-				          								<td>43</td>
-				          								<td>69</td>
-				          								<td>54</td>
-				          								<td>16</td>
-				          								<td>16</td>
-				          							</tr>
-				          						</tbody>
-				          					</table>
-				         </div>
-				        </li>
-				      
-				        <li id="simple3Tab">
-				          <span class="tab-title">Lens Traffic</span>
-				          <table class="chart" data-points="true" data-fill="true" data-line-width="1" data-legend="false" data-stack="true" data-tooltip-gravity="s" data-tooltip-pattern="This is a custom Tooltip Pattern. Use placeholders (%n) to include data: %1 or '%3'">
-				          						<thead>
-				          							<tr>
-				          								<th></th>
-				          								<th>Label 1</th>
-				          								<th>Label 2</th>
-				          								<th>Label 3</th>
-				          								<th>Label 4</th>
-				          								<th>Label 5</th>
-				          								<th>Label 6</th>
-				          							</tr>
-				          						</thead>
-				          						<tbody>
-				          							<tr>
-				          								<th>First Label</th>
-				          								<td>48</td>
-				          								<td>125</td>
-				          								<td>159</td>
-				          								<td>147</td>
-				          								<td>154</td>
-				          								<td>114</td>
-				          							</tr>
-				          							<tr>
-				          								<th>Second Label</th>
-				          								<td>8</td>
-				          								<td>27</td>
-				          								<td>25</td>
-				          								<td>79</td>
-				          								<td>47</td>
-				          								<td>59</td>
-				          							</tr>
-				          							<tr>
-				          								<th>Third Label</th>
-				          								<td>28</td>
-				          								<td>56</td>
-				          								<td>98</td>
-				          								<td>112</td>
-				          								<td>87</td>
-				          								<td>26</td>
-				          							</tr>
-				          							<tr>
-				          								<th>Fourth Label</th>
-				          								<td>38</td>
-				          								<td>43</td>
-				          								<td>69</td>
-				          								<td>54</td>
-				          								<td>16</td>
-				          								<td>16</td>
-				          							</tr>
-				          						</tbody>
-				          					</table>       
-				        </li>
-				      </ul>
+		    <ul class="tabs-content">
+		        <li class="active" id="simple1Tab">
+		          <span class="tab-title">All Traffic</span>
+		          <table class="chart" data-points="true" data-fill="true" data-line-width="1" data-legend="false" data-stack="true" data-tooltip-gravity="s" data-tooltip-pattern="This is a custom Tooltip Pattern. Use placeholders (%n) to include data: %1 or '%3'">
+		          						<thead>
+		          							<tr>
+		          								<th></th>
+		          								<th>Label 1</th>
+		          								<th>Label 2</th>
+		          								<th>Label 3</th>
+		          								<th>Label 4</th>
+		          								<th>Label 5</th>
+		          								<th>Label 6</th>
+		          							</tr>
+		          						</thead>
+		          						<tbody>
+		          							<tr>
+		          								<th>First Label</th>
+		          								<td>48</td>
+		          								<td>125</td>
+		          								<td>159</td>
+		          								<td>147</td>
+		          								<td>154</td>
+		          								<td>114</td>
+		          							</tr>
+		          							<tr>
+		          								<th>Second Label</th>
+		          								<td>8</td>
+		          								<td>27</td>
+		          								<td>25</td>
+		          								<td>79</td>
+		          								<td>47</td>
+		          								<td>59</td>
+		          							</tr>
+		          							<tr>
+		          								<th>Third Label</th>
+		          								<td>28</td>
+		          								<td>56</td>
+		          								<td>98</td>
+		          								<td>112</td>
+		          								<td>87</td>
+		          								<td>26</td>
+		          							</tr>
+		          							<tr>
+		          								<th>Fourth Label</th>
+		          								<td>38</td>
+		          								<td>43</td>
+		          								<td>69</td>
+		          								<td>54</td>
+		          								<td>16</td>
+		          								<td>16</td>
+		          							</tr>
+		          						</tbody>
+		          					</table>      
+		        </li>
+		        <li id="simple2Tab">
+		       
+		          <span class="tab-title">Articles Traffic</span>
+		          <table class="chart" data-points="true" data-fill="true" data-line-width="1" data-legend="false" data-stack="true" data-tooltip-gravity="s" data-tooltip-pattern="This is a custom Tooltip Pattern. Use placeholders (%n) to include data: %1 or '%3'">
+		          						<thead>
+		          							<tr>
+		          								<th></th>
+		          								<th>Label 1</th>
+		          								<th>Label 2</th>
+		          								<th>Label 3</th>
+		          								<th>Label 4</th>
+		          								<th>Label 5</th>
+		          								<th>Label 6</th>
+		          							</tr>
+		          						</thead>
+		          						<tbody>
+		          							<tr>
+		          								<th>First Label</th>
+		          								<td>48</td>
+		          								<td>125</td>
+		          								<td>159</td>
+		          								<td>147</td>
+		          								<td>154</td>
+		          								<td>114</td>
+		          							</tr>
+		          							<tr>
+		          								<th>Second Label</th>
+		          								<td>8</td>
+		          								<td>27</td>
+		          								<td>25</td>
+		          								<td>79</td>
+		          								<td>47</td>
+		          								<td>59</td>
+		          							</tr>
+		          							<tr>
+		          								<th>Third Label</th>
+		          								<td>28</td>
+		          								<td>56</td>
+		          								<td>98</td>
+		          								<td>112</td>
+		          								<td>87</td>
+		          								<td>26</td>
+		          							</tr>
+		          							<tr>
+		          								<th>Fourth Label</th>
+		          								<td>38</td>
+		          								<td>43</td>
+		          								<td>69</td>
+		          								<td>54</td>
+		          								<td>16</td>
+		          								<td>16</td>
+		          							</tr>
+		          						</tbody>
+		          					</table>
+		        </li>
+		      
+		        <li id="simple3Tab">
+		          <span class="tab-title">Lens Traffic</span>
+		          <table class="chart" data-points="true" data-fill="true" data-line-width="1" data-legend="false" data-stack="true" data-tooltip-gravity="s" data-tooltip-pattern="This is a custom Tooltip Pattern. Use placeholders (%n) to include data: %1 or '%3'">
+		          						<thead>
+		          							<tr>
+		          								<th></th>
+		          								<th>Label 1</th>
+		          								<th>Label 2</th>
+		          								<th>Label 3</th>
+		          								<th>Label 4</th>
+		          								<th>Label 5</th>
+		          								<th>Label 6</th>
+		          							</tr>
+		          						</thead>
+		          						<tbody>
+		          							<tr>
+		          								<th>First Label</th>
+		          								<td>48</td>
+		          								<td>125</td>
+		          								<td>159</td>
+		          								<td>147</td>
+		          								<td>154</td>
+		          								<td>114</td>
+		          							</tr>
+		          							<tr>
+		          								<th>Second Label</th>
+		          								<td>8</td>
+		          								<td>27</td>
+		          								<td>25</td>
+		          								<td>79</td>
+		          								<td>47</td>
+		          								<td>59</td>
+		          							</tr>
+		          							<tr>
+		          								<th>Third Label</th>
+		          								<td>28</td>
+		          								<td>56</td>
+		          								<td>98</td>
+		          								<td>112</td>
+		          								<td>87</td>
+		          								<td>26</td>
+		          							</tr>
+		          							<tr>
+		          								<th>Fourth Label</th>
+		          								<td>38</td>
+		          								<td>43</td>
+		          								<td>69</td>
+		          								<td>54</td>
+		          								<td>16</td>
+		          								<td>16</td>
+		          							</tr>
+		          						</tbody>
+		          					</table>       
+		        </li>
+		      </ul>
+			</div>
+			
+			<div class="engagementTable">
+				<table class="datatable">
+					<thead>
+						<tr>
+							<th>Segment</th>
+							<th>Page Views</th>
+							<th>Pages/Visit</th>
+							<th>Time on Site</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Combined</td>
+							<td>24,392,349</td>
+							<td>1.2</td>
+							<td>01:11</td>
+						</tr>
+						<tr>
+							<td>Articles</td>
+							<td>24,392,349</td>
+							<td>1.2</td>
+							<td>00:59</td>
+						</tr>
+						<tr>
+							<td>Lenses</td>
+							<td>24,392,349</td>
+							<td>1.2</td>
+							<td>01:29</td>
+						</tr>
+					</tbody>
+				</table>
 				
+			</div>
 		</div>
 		
 		

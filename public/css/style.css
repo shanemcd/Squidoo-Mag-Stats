@@ -33,6 +33,15 @@ header{
 	-moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
 }
 
+.panelContent{
+	border-top: 3px solid rgba(0, 0, 0, .4);
+	padding-top: 15px;
+}
+
+.panelContent h1{
+	font-size: 5em;
+}
+
 #leftColumn{
 	float: left;
 	width: 100%;
@@ -55,22 +64,13 @@ header{
 	margin-left: 0; 
 }
 
-.panelContent h1{
-	font-size: 5em;
-}
-
 .articles p{
-	font-size: 2em;
+	font-size: 30px;
 	margin: 0;
 }
 
 li > .base{
 	width: 300px;
-}
-
-.panelContent{
-	border-top: 3px solid rgba(0, 0, 0, .4);
-	padding-top: 15px;
 }
 
 #content h1{
@@ -89,9 +89,26 @@ li > .base{
 	font-size: 10px;
 }
 
+.engagementTable{
+	margin-top: 40px;
+}
+
 /************************************
          End Custom Styles
 *************************************/
+
+/*    --------------------------------------------------
+    Tables
+    -------------------------------------------------- */
+
+table { font-family: arial, helvetica, sans-serif; font-weight: normal;
+}
+table tbody tr td, table thead tr th { padding: 12px 10px; font-size: .85em; line-height: 1em; border: 1px solid #bbb; border-collapse: collapse; text-align: center; }
+table tbody tr td span { margin-left: .4em; font-size: .8em; }
+th.segment, td.segment { text-align: left; background: #f5f5f5; }
+table.popular th { font-size: .9em; line-height: 1.2em; }
+table.popular th.content, table.popular td.content { text-align: left; }
+table.popular th span { font-weight: normal; font-size: 0.9em; }
 
 /*    --------------------------------------------------
     Tabs
@@ -113,10 +130,17 @@ li > .base{
 	dl.tabs.vertical dd a { display: block; width: auto; height: auto; padding: 15px 20px; line-height: 1; border: solid 0px #ccc; border-width: 1px 1px 0px; margin: 0; color: #555; background: #eee; font-size: 15px; font-size: 1.5rem; }
 	dl.tabs.vertical dd a.active { height: auto; margin: 0; border-width: 1px 0px 0px; background: #fff; }
 	
-		.nice.tabs.vertical { border-bottom: solid 1px #eee; height: auto; }
-		.nice.tabs.vertical dd a { padding: 15px 20px; border: none; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 1px solid #eee; background: #fff; }
-		.nice.tabs.vertical dd a.active { border: none; background: #00a6fc; color: #fff; margin: 0; position: static; top: 0px; height: auto; }
-		.nice.tabs.vertical dd:first-child a.active { margin: 0; }
+/* tabs override*/
+.tabs { font-size: 1em; }
+.tabs a.active { font-weight: bold; }
+.nice.tabs { border-bottom: solid 1px #bbb; margin: 15px 0 30px 0; height:43px; }
+.nice.tabs dd a { padding: 7px 18px 9px; color: #555; background: #eee; border-left: 1px solid #bbb; border-left: 1px solid #bbb; border-top: 1px solid #bbb; margin: 0; position: relative; top: -3px; }
+.nice.tabs dd a.active { color: #000; background: #eee; border-left: 1px solid #bbb; border-right: 1px solid #bbb; border-top: 3px solid #333; }
+.nice.tabs dd:first-child a { border-right: 0; }
+.nice.tabs dd:last-child a { border-right: 1px solid #bbb; }
+.nice.tabs dd a:hover, .tabs a:hover { background: #ccc; color: #444; }
+.nice.tabs dd a.active, .nice.tabs dd a.active:hover, .tabs a.active { margin: 0; background: #fff; color: #000; }
+.tabs a:hover { text-decoration: none; }
     
     ul.tabs-content { margin: 0; display: block; }
     ul.tabs-content > li { display:none; }
@@ -130,7 +154,7 @@ li > .base{
     ul.contained.tabs-content li { padding: 20px; border: solid 0px #ddd; border-width: 0px 1px 1px 1px; }
     ul.nice.contained.tabs-content li { border-color: #eee; }
 
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td {
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, caption {
     margin: 0;
     padding: 0;
     border: 0;
@@ -149,6 +173,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 	overflow: hidden;
 	margin-top: 20px;
 	padding: 0 10px;
+	margin-bottom: 30px;
 }
 
 audio[controls], canvas, video {
@@ -414,20 +439,12 @@ table {
     font-size: 1.4rem;
 }
 
-th, td, caption {
-    padding: 0.1875em 10px 0.1875em 5px;
-}
-
 tfoot {
     font-style: italic;
 }
 
 caption {
     background-color: transparent;
-}
-
-tbody tr:nth-child(odd) td {
-    background-color: #c3d9e6;
 }
 
 form {
