@@ -55,8 +55,7 @@ header{
 .articles{
 	border-top: 2px solid rgba(0, 0, 0, .4);
 	float: none;
-	
-	width: 47.8%;
+	width: 100%;
 	padding-top: 5px;
 }
 
@@ -107,6 +106,12 @@ li > .base{
 
 table { font-family: arial, helvetica, sans-serif; font-weight: normal;
 }
+
+th{
+	text-align: left !important;
+	padding-right: 20px !important;
+}
+
 table tbody tr td, table thead tr th { padding: 12px 10px; font-size: .85em; line-height: 1em; border: 1px solid #bbb; border-collapse: collapse; text-align: center; }
 table tbody tr td span { margin-left: .4em; font-size: .8em; }
 th.segment, td.segment { text-align: left; background: #f5f5f5; }
