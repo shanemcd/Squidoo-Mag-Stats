@@ -57,13 +57,26 @@
     <dd><a href="traffic.html">Traffic Sources</a></dd>
 	</dl>	
 	
+	<script>
+	    $(function(){
+	      // bind change event to select
+	      $('#dynamic_select').bind('change', function () {
+	          var url = $(this).val(); // get selected value
+	          if (url) { // require a URL
+	              window.location = url; // redirect
+	          }
+	          return false;
+	      });
+	    });
+	</script>
+	
 	<div id="mobileNav">
-		<select>
-		  <option><a href="index.html">Visitors</a></option>
-		  <option><a href="popular.html">Popular Content</a></option>
-		  <option><a href="social.html">Social Engagement</a></option>
-		  <option><a href="traffic.html">Traffic Sources</a></option>
-		</select>
+	<select id="dynamic_select">
+	    <option value="index.html" selected>Visitors</option>
+	    <option value="popular.html">Popular Content</option>
+	    <option value="social.html">Social Engagement</option>
+	    <option value="traffic.html">Traffic Sources</option>
+	</select>
 	</div>
 	
 		<div id="leftColumn">
