@@ -42,7 +42,7 @@ header{
 }
 
 .articles{
-	border-top: 3px solid rgba(0, 0, 0, .4);
+	border-top: 2px solid rgba(0, 0, 0, .4);
 	float: left;
 	margin-left: 4.4%; 
 	width: 47.8%;
@@ -637,7 +637,20 @@ h2, h3 {
 
 .graph{
 	width: 100%;
-	margin-top: 10%;
+	float: right;
+}
+
+.articles{
+	float: none;
+	margin: 0;
+	margin-top: 40px;
+	width: 100%;
+
+}
+
+.graph{
+	margin-top: 40px;
+	float: left;
 }
 
 }
@@ -656,9 +669,16 @@ h2, h3 {
 	width: 100%;
 }
 
+.articles{
+	float: none;
+	margin: 0;
+	margin-top: 40px;
+
+}
+
 .graph{
-	width: 100%;
-	margin-top: 10%;
+	margin-top: 40px;
+	float: left;
 }
 
 
