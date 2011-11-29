@@ -93,6 +93,10 @@ li > .base{
 	margin-top: 40px;
 }
 
+.trafficGraph{
+	margin-top: 20px;
+}
+
 /************************************
          End Custom Styles
 *************************************/
@@ -752,6 +756,9 @@ h2, h3 {
 	margin-left: 0;
 }
 
+.trafficGraph{
+	margin-top: 0;
+}
 
 
 @media only screen and (min-width: 992px) {
