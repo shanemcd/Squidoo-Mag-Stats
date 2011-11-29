@@ -62,7 +62,7 @@ $.fn.wl_Chart = function (method) {
 
 		//set the width
 		opts.width = opts.holder.width();
-
+		
 		//show or hide the table
 		(opts.hideTable) ? $this.hide() : $this.show();
 
