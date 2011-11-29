@@ -56,7 +56,8 @@ header{
 	border-top: 2px solid rgba(0, 0, 0, .4);
 	float: none;
 	width: 100%;
-	padding-top: 5px;
+	margin-top: 30px;
+	padding-top: 10px;
 }
 
 .articles:first-child { 
@@ -90,6 +91,10 @@ li > .base{
 
 .engagementTable{
 	margin-top: 40px;
+}
+
+.graph{
+	margin-top: 30px;
 }
 
 .trafficGraph{
@@ -686,14 +691,6 @@ h2, h3 {
 	float: right;
 }
 
-.articles{
-	float: none;
-	margin: 0;
-	margin-top: 40px;
-	width: 100%;
-
-}
-
 .graph{
 	margin-top: 40px;
 	float: left;
@@ -714,13 +711,6 @@ h2, h3 {
 
 .panelContent{
 	width: 100%;
-}
-
-.articles{
-	float: none;
-	margin: 0;
-	margin-top: 40px;
-
 }
 
 .graph{
@@ -751,16 +741,17 @@ h2, h3 {
 	padding-left: 4.4%;
 }
 
-.articles{
-	width: 47.8%;
-	float: left;
-	margin-left: 4.4%;
-}
-
 .articles:first-child{
 	width: 47.8%;
 	float: left;
 	margin-left: 0;
+}
+
+.articles{
+	width: 47.8%;
+	float: left;
+	margin-left: 4.4%;
+	margin-top: 0;
 }
 
 .trafficGraph{
