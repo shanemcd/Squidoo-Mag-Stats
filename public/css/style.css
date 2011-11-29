@@ -129,7 +129,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 }
 
 #content{
-	overflow: visible;
+	overflow: hidden;
 	margin-top: 20px;
 }
 
