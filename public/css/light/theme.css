@@ -24,9 +24,6 @@
 /* General Section
 /*----------------------------------------------------------------------*/
 
-html, body, textarea, input { 
-	color:#6f6f6f;
-}
 html{
 	background-color:#ffffff;
 }
@@ -40,16 +37,6 @@ nav ul li a span{
 	background-image:url(../images/icons/dark/arrow_right.png);
 }
 
-h1, h2, h3, h4, h5, h6{
-	text-shadow:0 1px 0 #ffffff;
-	color:#777777;
-}
-h1{
-	text-shadow:0 2px 0 #ffffff;
-}
-h1 span{
-	text-shadow:0 1px 0 #ffffff;
-}
 blockquote{
 	border-color:#999999;
 	color:#999999;

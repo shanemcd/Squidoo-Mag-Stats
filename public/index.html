@@ -40,18 +40,44 @@
 <body class="clearfix">
 
 <header role="banner">
-<h1>Squidoo Magazine Stats Dashboard</h1>
+	<div id="title">
+		<h1>Squidoo Magazine Stats Dashboard</h1>
+	</div>
 </header>
 
-<div class="content clearfix">
-<h2>GoodVeg Stats</h2>
-<div role="main">
-	<section id="content">
+<div id="wrap" class="clearfix">
 	
-		<section id="totalVists">
-			<h3>Total Visits</h3>
-			<div id="pieChart">
-			<table class="chart" data-type="pie">
+<div role="main">
+	<section id="content" class="clearfix">	
+	
+	<dl class="nice tabs mobile hide-on-phones">
+	        <dd><a href="index.php" class="active">Visitors</a></dd>
+	        <dd><a href="popular.php">Popular Content</a></dd>
+	        <dd><a href="social.php">Social Engagement</a></dd>
+	        <dd><a href="traffic.php">Traffic Sources</a></dd>
+	      </dl>	
+	
+		<div id="leftColumn">
+			<div class="panel">
+				<h1>Total Vists</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+				<div class="panelContent">
+					<h2>COMBINED VISITS</h2>
+					<h1>33,153,320</h1>
+					
+					<div class="clearfix" style="width: 100%;">	
+						<div class="articles">
+						<h3>Articles</h3>
+						<p>23,414</p>
+						</div>
+						<div class="articles">
+						<h3>Lenses</h3>
+						<p>11,129,906</p>
+						</div>
+					</div>
+				</div>
+				<div class="graph" >
+					<table class="chart" data-type="pie" data-legend="false">
 				<thead>
 					<tr>
 						<th></th>
@@ -102,65 +128,265 @@
 					</tr>
 				</tbody>
 			</table>
+				</div>
+				<br style="clear: both;"/>
+			</div>
+			
+			<div class="panel">
+				<h1>Total Vists</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+				<div class="panelContent">
+					<h2>COMBINED VISITS</h2>
+					<h1>33,153,320</h1>
+					
+					<div class="clearfix" style="width: 100%;">	
+						<div class="articles">
+						<h3>Articles</h3>
+						<p>23,414</p>
+						</div>
+						<div class="articles">
+						<h3>Lenses</h3>
+						<p>11,129,906</p>
+						</div>
+					</div>
+				</div>
+				<div class="graph">
+					<table class="chart" data-type="pie" data-legend="false">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Label 1</th>
+						<th>Label 2</th>
+						<th>Label 3</th>
+						<th>Label 4</th>
+						<th>Label 5</th>
+						<th>Label 6</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>First Label</th>
+						<td>48</td>
+						<td>125</td>
+						<td>159</td>
+						<td>147</td>
+						<td>154</td>
+						<td>114</td>
+					</tr>
+					<tr>
+						<th>Second Label</th>
+						<td>8</td>
+						<td>27</td>
+						<td>25</td>
+						<td>79</td>
+						<td>47</td>
+						<td>59</td>
+					</tr>
+					<tr>
+						<th>Third Label</th>
+						<td>28</td>
+						<td>56</td>
+						<td>98</td>
+						<td>112</td>
+						<td>87</td>
+						<td>26</td>
+					</tr>
+					<tr>
+						<th>Fourth Label</th>
+						<td>38</td>
+						<td>43</td>
+						<td>69</td>
+						<td>54</td>
+						<td>16</td>
+						<td>16</td>
+					</tr>
+				</tbody>
+			</table>
+				</div>
+				<br style="clear: both;"/>
+			</div>
 		</div>
-		</section>
+
+		<div id="rightColumn">
+				<h3>Line Charts</h3>
+				<dl class="tabs">
+				        <dd><a href="#simple1" class="active">Combined Traffic</a></dd>
+				        <dd><a href="#simple2">Magazine</a></dd>
+				        <dd><a href="#simple3">Lenses</a></dd>
+				      </dl>
+				
+				      <ul class="tabs-content">
+				        <li class="active" id="simple1Tab">
+				          <span class="tab-title">All Traffic</span>
+				          <table class="chart" data-points="true" data-fill="true" data-line-width="1" data-legend="false" data-stack="true" data-tooltip-gravity="s" data-tooltip-pattern="This is a custom Tooltip Pattern. Use placeholders (%n) to include data: %1 or '%3'">
+				          						<thead>
+				          							<tr>
+				          								<th></th>
+				          								<th>Label 1</th>
+				          								<th>Label 2</th>
+				          								<th>Label 3</th>
+				          								<th>Label 4</th>
+				          								<th>Label 5</th>
+				          								<th>Label 6</th>
+				          							</tr>
+				          						</thead>
+				          						<tbody>
+				          							<tr>
+				          								<th>First Label</th>
+				          								<td>48</td>
+				          								<td>125</td>
+				          								<td>159</td>
+				          								<td>147</td>
+				          								<td>154</td>
+				          								<td>114</td>
+				          							</tr>
+				          							<tr>
+				          								<th>Second Label</th>
+				          								<td>8</td>
+				          								<td>27</td>
+				          								<td>25</td>
+				          								<td>79</td>
+				          								<td>47</td>
+				          								<td>59</td>
+				          							</tr>
+				          							<tr>
+				          								<th>Third Label</th>
+				          								<td>28</td>
+				          								<td>56</td>
+				          								<td>98</td>
+				          								<td>112</td>
+				          								<td>87</td>
+				          								<td>26</td>
+				          							</tr>
+				          							<tr>
+				          								<th>Fourth Label</th>
+				          								<td>38</td>
+				          								<td>43</td>
+				          								<td>69</td>
+				          								<td>54</td>
+				          								<td>16</td>
+				          								<td>16</td>
+				          							</tr>
+				          						</tbody>
+				          					</table>      
+				        </li>
+				        <li id="simple2Tab" style="width: 100%;">
+				        <div style="min-width: 100%;">
+				          <span class="tab-title">Articles Traffic</span>
+				          
+				          
+				          <table class="chart" data-points="true" data-fill="true" data-line-width="1" data-legend="false" data-stack="true" data-tooltip-gravity="s" data-tooltip-pattern="This is a custom Tooltip Pattern. Use placeholders (%n) to include data: %1 or '%3'">
+				          						<thead>
+				          							<tr>
+				          								<th></th>
+				          								<th>Label 1</th>
+				          								<th>Label 2</th>
+				          								<th>Label 3</th>
+				          								<th>Label 4</th>
+				          								<th>Label 5</th>
+				          								<th>Label 6</th>
+				          							</tr>
+				          						</thead>
+				          						<tbody>
+				          							<tr>
+				          								<th>First Label</th>
+				          								<td>48</td>
+				          								<td>125</td>
+				          								<td>159</td>
+				          								<td>147</td>
+				          								<td>154</td>
+				          								<td>114</td>
+				          							</tr>
+				          							<tr>
+				          								<th>Second Label</th>
+				          								<td>8</td>
+				          								<td>27</td>
+				          								<td>25</td>
+				          								<td>79</td>
+				          								<td>47</td>
+				          								<td>59</td>
+				          							</tr>
+				          							<tr>
+				          								<th>Third Label</th>
+				          								<td>28</td>
+				          								<td>56</td>
+				          								<td>98</td>
+				          								<td>112</td>
+				          								<td>87</td>
+				          								<td>26</td>
+				          							</tr>
+				          							<tr>
+				          								<th>Fourth Label</th>
+				          								<td>38</td>
+				          								<td>43</td>
+				          								<td>69</td>
+				          								<td>54</td>
+				          								<td>16</td>
+				          								<td>16</td>
+				          							</tr>
+				          						</tbody>
+				          					</table>
+				          </div>
+				        </li>
+				        <li id="simple3Tab">
+				          <span class="tab-title">Lens Traffic</span>
+				          <table class="chart" data-points="true" data-fill="true" data-line-width="1" data-legend="false" data-stack="true" data-tooltip-gravity="s" data-tooltip-pattern="This is a custom Tooltip Pattern. Use placeholders (%n) to include data: %1 or '%3'">
+				          						<thead>
+				          							<tr>
+				          								<th></th>
+				          								<th>Label 1</th>
+				          								<th>Label 2</th>
+				          								<th>Label 3</th>
+				          								<th>Label 4</th>
+				          								<th>Label 5</th>
+				          								<th>Label 6</th>
+				          							</tr>
+				          						</thead>
+				          						<tbody>
+				          							<tr>
+				          								<th>First Label</th>
+				          								<td>48</td>
+				          								<td>125</td>
+				          								<td>159</td>
+				          								<td>147</td>
+				          								<td>154</td>
+				          								<td>114</td>
+				          							</tr>
+				          							<tr>
+				          								<th>Second Label</th>
+				          								<td>8</td>
+				          								<td>27</td>
+				          								<td>25</td>
+				          								<td>79</td>
+				          								<td>47</td>
+				          								<td>59</td>
+				          							</tr>
+				          							<tr>
+				          								<th>Third Label</th>
+				          								<td>28</td>
+				          								<td>56</td>
+				          								<td>98</td>
+				          								<td>112</td>
+				          								<td>87</td>
+				          								<td>26</td>
+				          							</tr>
+				          							<tr>
+				          								<th>Fourth Label</th>
+				          								<td>38</td>
+				          								<td>43</td>
+				          								<td>69</td>
+				          								<td>54</td>
+				          								<td>16</td>
+				          								<td>16</td>
+				          							</tr>
+				          						</tbody>
+				          					</table>        
+				        </li>
+				      </ul>
+				
+		</div>
 		
-		<section id="traffic">
-			<div id="lineChart">
-			<h3>Line Charts</h3>
-			<table class="chart">
-									<thead>
-										<tr>
-											<th></th>
-											<th>Label 1</th>
-											<th>Label 2</th>
-											<th>Label 3</th>
-											<th>Label 4</th>
-											<th>Label 5</th>
-											<th>Label 6</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th>First Label</th>
-											<td>48</td>
-											<td>125</td>
-											<td>159</td>
-											<td>147</td>
-											<td>154</td>
-											<td>114</td>
-										</tr>
-										<tr>
-											<th>Second Label</th>
-											<td>8</td>
-											<td>27</td>
-											<td>25</td>
-											<td>79</td>
-											<td>47</td>
-											<td>59</td>
-										</tr>
-										<tr>
-											<th>Third Label</th>
-											<td>28</td>
-											<td>56</td>
-											<td>98</td>
-											<td>112</td>
-											<td>87</td>
-											<td>26</td>
-										</tr>
-										<tr>
-											<th>Fourth Label</th>
-											<td>38</td>
-											<td>43</td>
-											<td>69</td>
-											<td>54</td>
-											<td>16</td>
-											<td>16</td>
-										</tr>
-									</tbody>
-								</table>
-		</div>
-		</section>
+		
 		
 	</section>
 </div>
@@ -174,12 +400,15 @@
   		
   <!-- some basic functions -->
   <script src="charts/js/functions.js"></script>
+  <script src="js/app.js"></script>
   <script src="charts/js/plugins.js"></script>
   <script src="charts/js/flot.js"></script>
 	<script src="charts/js/datatables.js"></script>
 	<script src="charts/js/wl_Chart.js"></script>
 	<script src="charts/js/wl_Widget.js"></script>
  	<script src="charts/js/config.js"></script>
+ 	
+ 	
 	<!-- the script which handles all the access to plugins etc... -->
 	<script defer src="charts/js/script.js"></script>
 	 <!-- end scripts-->

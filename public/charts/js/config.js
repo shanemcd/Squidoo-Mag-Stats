@@ -43,7 +43,7 @@ if($.fn.wl_Calendar) $.fn.wl_Calendar.defaults = {
 
 if($.fn.wl_Chart) $.fn.wl_Chart.defaults = {
 	width: null,
-	height: 300,
+	height: 200,
 	hideTable: true,
 	data: {},
 	stack: false,

@@ -2,7 +2,7 @@
            Custom Styles
 *************************************/
 
-.content{
+#wrap{
 	max-width: 980px;
 	margin : 0 auto;
 }
@@ -12,20 +12,109 @@ header{
 	color: #fff;
 }
 
-#totalVists{
+#title{
+	max-width: 980px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+.panel:first-child{
+	margin-top: 0;
+}
+
+.panel{
+	padding: 10px;
+	margin-top: 15px;
 	background: -moz-linear-gradient(top, #FFFFFF 0%, #F4F4F4 100%); 
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
-			box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
-			-webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
-			-moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
-			margin: 0 0 20px 0;	
-			
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#F4F4F4));
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#F4F4F4',GradientType=0 );
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+}
+
+#leftColumn{
+	float: left; 
+}
+
+#rightColumn{
+	float: left;
+}
+
+.articles{
+	border-top: 3px solid rgba(0, 0, 0, .4);
+	float: left;
+	margin-left: 4.4%; 
+	width: 47.8%;
+	padding-top: 5px;
+}
+
+.articles:first-child { 
+	margin-left: 0; 
+}
+
+.panelContent h1{
+	font-size: 5em;
+}
+
+.articles p{
+	font-size: 2em;
+	margin: 0;
+}
+
+li > .base{
+	width: 300px;
+}
+
+.overlay{
+	
+}
+
+.panelContent{
+	border-top: 3px solid rgba(0, 0, 0, .4);
+	padding-top: 15px;
 }
 
 /************************************
          End Custom Styles
 *************************************/
+
+/*    --------------------------------------------------
+    Tabs
+    -------------------------------------------------- */
+    dl.tabs { display: block; margin: 0 0 20px 0; padding: 0; height: 30px; border-bottom: solid 1px #ddd; }
+    dl.tabs dt { display: block; width: auto; height: 30px; padding: 0px 9px 0 20px; line-height: 30px; float: left; color: #999; font-size: 11px; text-transform: uppercase; cursor: default; }
+    dl.tabs dt:first-child { padding: 0 9px 0 0px; }
+    dl.tabs dd { display: block; width: auto; height: 30px; padding: 0; float: left; }
+    dl.tabs dd a { display: block; width: auto; height: 29px; padding: 0px 9px; line-height: 30px; border: solid 1px #ddd; margin: 0 -1px 0 0; color: #555; background: #eee; }
+    dl.tabs dd a.active { background: #fff; border-width: 1px 1px 0px 1px; height: 30px; }
+
+		.nice.tabs { border-bottom: solid 1px #eee; margin: 0 0 30px 0; height:43px; }
+		.nice.tabs dd a { padding: 7px 18px 9px; font-size: 15px; font-size: 1.5rem; color: #555555; background: none; border: none; }
+		.nice.tabs dd a.active { font-weight: bold; color: #333; background: #fff; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 3px solid #00a6fc; margin: 0 10px; position: relative; top: -5px; }
+		.nice.tabs dd:first-child a.active { margin-left: 0; }
+		
+	dl.tabs.vertical { height: auto; }
+	dl.tabs.vertical dt, dl.tabs.vertical dd, dl.nice.tabs.vertical dt, dl.nice.tabs.vertical dd { float: none; height: auto; }
+	dl.tabs.vertical dd a { display: block; width: auto; height: auto; padding: 15px 20px; line-height: 1; border: solid 0px #ccc; border-width: 1px 1px 0px; margin: 0; color: #555; background: #eee; font-size: 15px; font-size: 1.5rem; }
+	dl.tabs.vertical dd a.active { height: auto; margin: 0; border-width: 1px 0px 0px; background: #fff; }
+	
+		.nice.tabs.vertical { border-bottom: solid 1px #eee; height: auto; }
+		.nice.tabs.vertical dd a { padding: 15px 20px; border: none; border-left: 1px solid #eee; border-right: 1px solid #eee; border-top: 1px solid #eee; background: #fff; }
+		.nice.tabs.vertical dd a.active { border: none; background: #00a6fc; color: #fff; margin: 0; position: static; top: 0px; height: auto; }
+		.nice.tabs.vertical dd:first-child a.active { margin: 0; }
+    
+    ul.tabs-content { margin: 0; display: block; }
+    ul.tabs-content > li { display:none; }
+    ul.tabs-content > li.active { display: block; }
+    
+    dl.contained, dl.nice.contained { margin-bottom: 0px; }
+    dl.contained.tabs dd a { padding: 0px 14px; }
+    dl.nice.contained.tabs dd a { padding: 7px 18px 9px; }
+    
+    ul.contained.tabs-content { padding: 0; }
+    ul.contained.tabs-content li { padding: 20px; border: solid 0px #ddd; border-width: 0px 1px 1px 1px; }
+    ul.nice.contained.tabs-content li { border-color: #eee; }
 
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td {
     margin: 0;
@@ -35,7 +124,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, cod
     font-style: normal;
     font-size: 100%;
     line-height: 1;
-    font-family: inherit;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
@@ -44,6 +133,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 
 #content{
 	overflow: visible;
+	margin-top: 20px;
 }
 
 audio[controls], canvas, video {
@@ -66,16 +156,20 @@ audio[controls], canvas, video {
 
 .clearfix {
     zoom: 1;
+    margin: 0;
+
 }
 .clearfix:before, .clearfix:after {
     content: "\0020";
     display: block;
     height: 0;
     overflow: hidden;
+    
 }
 
 .clearfix:after {
     clear: both;
+   
 }
 
 html {
@@ -91,35 +185,35 @@ button, input, select, textarea {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
 }
 
 h1 {
     margin-bottom: 0.75em;
-    font-size: 48px;
-    font-size: 4.8rem;
+    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 1.2;
 }
 
 h2 {
     margin-bottom: 0.75em;
-    font-size: 32px;
-    font-size: 3.2rem;
+    font-size: 22px;
+    font-size: 2.2rem;
     line-height: 1.2;
 }
 
 h3 {
     margin-bottom: 1em;
-    font-size: 24px;
-    font-size: 2.4rem;
+    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.3;
 }
 
 h4 {
     margin-bottom: 1em;
-    font-size: 18px;
-    font-size: 1.8rem;
+    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.25;
+    text-transform: uppercase;
 }
 
 h5 {
@@ -133,7 +227,7 @@ h6 {
     font-size: 1.6rem;
 }
 
-p, ol, ul, dl, address {
+p, ol, ul, address {
     margin-bottom: 1.5em;
     font-size: 16px;
     font-size: 1.6rem;
@@ -531,51 +625,66 @@ h2, h3 {
 }
 @media only screen and (min-width: 480px) {
 
-#totalVists{
-	width: 100%;
-	float: none;
+#leftColumn{
+	width: 100%; 
 }
 
-#traffic{
+#rightColumn{
 	width: 100%;
-	float: none;
+	padding-left: 0;
 }
+
+.panelContent{
+	width: 100%;
+}
+
+.graph{
+	width: 100%;
+	padding-left: 0;
+}
+
+/*use this to change chart size*/
+/*.base{
+	height: 300px;
+}
+
+.overlay{
+	height: 300px;
+}*/
 
 }
 @media only screen and (min-width: 600px) {
 
+#leftColumn{
+	width: 56.5%; 
+}
+
+#rightColumn{
+	width: 39.1%;
+	padding-left: 4.4%;
+}
+
+.panelContent{
+	width: 56.5%;
+	float: left;
+}
+
+.graph{
+	width: 39.1%;
+	float: right;
+	padding-left: 4.4%;
+}
 
 
 }
 @media only screen and (min-width: 768px) {
 
-#totalVists{
-	max-width: 50%;
-	background-color: white;
-	float: left;
-}
-
-#traffic{
-	max-width: 40%;
-	float: right;
-}
 
 
 }
 @media only screen and (min-width: 992px) {
 
-#totalVists{
-	max-width: 50%;
-	background-color: white;
-	float: left;
-}
 
-#traffic{
-	max-width: 40%;
-	float: right;
-}
-
-}
 
 }
 @media only screen and (min-width: 1382px) {

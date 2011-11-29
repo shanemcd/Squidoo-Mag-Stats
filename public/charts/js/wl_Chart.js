@@ -47,7 +47,7 @@ $.fn.wl_Chart = function (method) {
 				'class': 'chart'
 			}).css({
 				width: (opts.width || $this.width() || '100%') / 100 * 99,
-				height: opts.height || 300
+				height: opts.height || 100
 			}).insertAfter($this);
 
 
@@ -430,7 +430,7 @@ $.fn.wl_Chart = function (method) {
 
 $.fn.wl_Chart.defaults = {
 	width: null,
-	height: 300,
+	height: 200,
 	hideTable: true,
 	data: {},
 	stack: false,
