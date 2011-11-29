@@ -637,20 +637,33 @@ h2, h3 {
 
 .graph{
 	width: 100%;
-	padding-left: 0;
+	margin-top: 10%;
 }
-
-/*use this to change chart size*/
-/*.base{
-	height: 300px;
-}
-
-.overlay{
-	height: 300px;
-}*/
 
 }
 @media only screen and (min-width: 600px) {
+
+#leftColumn{
+	width: 100%; 
+}
+
+#rightColumn{
+	width: 100%;
+	padding-left: 0;
+}
+
+.panelContent{
+	width: 100%;
+}
+
+.graph{
+	width: 100%;
+	margin-top: 10%;
+}
+
+
+}
+@media only screen and (min-width: 768px) {
 
 #leftColumn{
 	width: 56.5%; 
@@ -671,12 +684,6 @@ h2, h3 {
 	float: right;
 	padding-left: 4.4%;
 }
-
-
-}
-@media only screen and (min-width: 768px) {
-
-
 
 }
 @media only screen and (min-width: 992px) {
