@@ -34,17 +34,19 @@ header{
 }
 
 #leftColumn{
-	float: left; 
+	float: left;
+	width: 100%;
 }
 
 #rightColumn{
 	float: left;
+	width: 100%;
 }
 
 .articles{
 	border-top: 2px solid rgba(0, 0, 0, .4);
-	float: left;
-	margin-left: 4.4%; 
+	float: none;
+	
 	width: 47.8%;
 	padding-top: 5px;
 }
@@ -131,6 +133,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 #content{
 	overflow: hidden;
 	margin-top: 20px;
+	padding: 0 10px;
 }
 
 audio[controls], canvas, video {
@@ -653,6 +656,7 @@ h2, h3 {
 	float: left;
 }
 
+
 }
 @media only screen and (min-width: 600px) {
 
@@ -681,7 +685,6 @@ h2, h3 {
 	float: left;
 }
 
-
 }
 @media only screen and (min-width: 768px) {
 
@@ -705,10 +708,25 @@ h2, h3 {
 	padding-left: 4.4%;
 }
 
+.articles{
+	width: 47.8%;
+	float: left;
+	margin-left: 4.4%;
 }
+
+.articles:first-child{
+	width: 47.8%;
+	float: left;
+	margin-left: 0;
+}
+
+
+
 @media only screen and (min-width: 992px) {
 
-
+#content{
+	padding: 0;
+}
 
 }
 @media only screen and (min-width: 1382px) {
