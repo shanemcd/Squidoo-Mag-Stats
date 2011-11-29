@@ -68,10 +68,25 @@ li > .base{
 	width: 300px;
 }
 
-
 .panelContent{
 	border-top: 3px solid rgba(0, 0, 0, .4);
 	padding-top: 15px;
+}
+
+#content h1{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.tabs a{
+	font-family: sans-serif;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+.tickLabel{
+	font-family: sans-serif;
+	font-size: 10px;
 }
 
 /************************************
@@ -123,7 +138,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, cod
     font-style: normal;
     font-size: 100%;
     line-height: 1;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Georgia, serif;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
