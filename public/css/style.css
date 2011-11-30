@@ -134,14 +134,15 @@ li > .base{
 }
 
 
-engagementTable h3{
+.engagementTable h3{
 	color: #181818;
-	font-size: 16px;
+	font-size: 18px;
 }
 
-engagementTable p{
+.engagementTable p{
 	font-size: 14px;
 	font-family: Georgia, serif;
+	margin-bottom: 30px;
 }
 #mobileNav{
 	display: block;
