@@ -3,14 +3,11 @@
 *************************************/
 
 #wrap{
-	max-width: 980px;
-	margin : 0 auto;
+	max-width: 980px; margin : 0 auto 0;
 }
 
 header{
-	background-color: #000;
-	color: #fff;
-	height: 100%;
+	background-color: #000; color: #fff; height: 100%;
 }
 
 header h1{
@@ -18,13 +15,15 @@ header h1{
 }
 
 #title{
-	max-width: 980px;
-	margin: 0 auto;
-	padding-top: 15px;
+	max-width: 980px; margin: 0 auto; padding-top: 15px;
 }
 
-.panel:first-child{
-	margin-top: 0;
+#leftColumn{
+	float: left; width: 100%;
+}
+
+#rightColumn{
+	float: left; width: 100%;
 }
 
 .panel{
@@ -40,14 +39,16 @@ header h1{
 	margin: 0 0 20px 0;
 }
 
+.panel:first-child{
+	margin-top: 0;
+}
+
 .panel p{
-	font-family: Georgia, serif;
-	font-size: 14px;
+	font-family: Georgia, serif; font-size: 14px;
 }
 
 .panelContent{
-	border-top: 2px solid rgba(0, 0, 0, .4);
-	padding-top: 15px;
+	border-top: 2px solid rgba(0, 0, 0, .4); padding-top: 15px;
 }
 
 .panelContent p{
@@ -55,33 +56,27 @@ header h1{
 }
 
 .panelContent h3{
-	font-size: 1.5em;
-	color: #555;
-	margin-bottom: 10px;
+	font-size: 1.5em; color: #555; margin-bottom: 10px;
 }
 
-#leftColumn{
-	float: left;
-	width: 100%;
+.graph{
+	margin-top: 30px;
 }
 
-#rightColumn{
-	float: left;
-	width: 100%;
+.trafficGraph{
+	margin-top: 20px;
 }
 
-
-.articles:first-child { 
-	margin-left: 0; 
-}
-
-li > .base{
-	width: 300px;
+.mainNumber p{
+	font-size: 6em;
+	margin-bottom: 20px;
+	font-family: proxima-nova-extra-condensed, arial, helvetica, sans-serif;
+	letter-spacing: -1px;
+	font-weight: 600;
 }
 
 #content h1{
-	font-size: 24px;
-	font-weight: bold;
+	font-size: 24px; font-weight: bold;
 }
 
 
@@ -91,6 +86,10 @@ li > .base{
 	width: 100%;
 	margin-top: 30px;
 	padding-top: 10px;
+}
+
+.articles:first-child { 
+	margin-left: 0; 
 }
 
 .articles h3{
@@ -107,56 +106,35 @@ li > .base{
 	margin: 0;
 }
 
-.mainNumber p{
-	font-size: 6em;
-	margin-bottom: 20px;
-	font-family: proxima-nova-extra-condensed, arial, helvetica, sans-serif;
-	letter-spacing: -1px;
-	font-weight: 600;
+/*Hide the tabs here, show them in the media query*/
+
+.nice.tabs{
+	display: none;
+}
+
+#mobileNav{
+	display: block; float: right; padding: 0 0 20px 0;
 }
 
 .tabs a{
-	font-family: sans-serif;
-	font-size: 13px;
-	text-decoration: none;
-}
-
-.tickLabel{
-	font-family: sans-serif;
-	font-size: 10px;
+	font-family: sans-serif; font-size: 13px; text-decoration: none;
 }
 
 .engagementTable{
 	margin-top: 40px;
 }
 
-.graph{
-	margin-top: 30px;
-}
-
-.trafficGraph{
-	margin-top: 20px;
-}
-
-.nice.tabs{
-	display: none;
-}
-
-
 .engagementTable h3{
-	color: #181818;
-	font-size: 18px;
+	font-size: 18px; color: #181818;
 }
 
 .engagementTable p{
-	font-size: 14px;
-	font-family: Georgia, serif;
-	margin-bottom: 30px;
+	font-family: Georgia, serif; font-size: 14px; margin-bottom: 30px;
 }
-#mobileNav{
-	display: block;
-	float: right;
-	padding: 0 0 20px 0;
+
+
+.tickLabel{
+	font-family: sans-serif; font-size: 10px;
 }
 
 /************************************
@@ -248,6 +226,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 	margin-top: 20px;
 	padding: 0 10px;
 	margin-bottom: 30px;
+}
+
+header{
+	padding: 0 10px;
 }
 
 audio[controls], canvas, video {
@@ -841,8 +823,11 @@ h2, h3 {
 	padding: 0;
 }
 
+header{
+	padding: 0;
 }
 
+}
 @media only screen and (min-width: 1382px) {
 
 
