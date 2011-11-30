@@ -24,6 +24,7 @@ header h1{
 
 #rightColumn{
 	float: left; width: 100%;
+	overflow: hidden;
 }
 
 .panel{
