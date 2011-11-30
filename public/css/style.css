@@ -113,7 +113,7 @@ header h1{
 }
 
 #mobileNav{
-	display: block; float: right; padding: 0 0 20px 0;
+	display: block; float: left; padding: 0 0 20px 0;
 }
 
 .tabs a{
@@ -230,6 +230,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 
 header{
 	padding: 0 10px;
+}
+
+header h1{
+	
 }
 
 audio[controls], canvas, video {
