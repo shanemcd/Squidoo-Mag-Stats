@@ -104,6 +104,9 @@ li > .base{
 .mainNumber p{
 	font-size: 45px;
 	margin-bottom: 30px;
+	font-family: proxima-nova-extra-condensed, arial, helvetica, sans-serif;
+	letter-spacing: -1px;
+	font-weight: 600;
 }
 
 .tabs a{
