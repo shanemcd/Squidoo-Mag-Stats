@@ -1,5 +1,4 @@
-$(document).ready(function() {
-						   
+$(document).ready(function() {  
 	
 	//for Caching
 	var $content = $('#content');
@@ -248,41 +247,7 @@ $(document).ready(function() {
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 		
 		
-		
-		
 		/*----------------------------------------------------------------------*/
-		/* Callback for Slider
-		/*----------------------------------------------------------------------*/
-			$content.find('div.slider#slider_callback').wl_Slider({
-				onSlide:function(value){
-					$('#slider_callback_bar').width(value+'%').text(value);
-				}													  
-			});
-		
-		/*----------------------------------------------------------------------*/
-		
-		
-		
-		/*----------------------------------------------------------------------*/
-		/* Rangeslider area how to
-		/* http://revaxarts-themes.com/whitelabel/doc-sliders.html
-		/*----------------------------------------------------------------------*/
-		
-			$content.find('div.slider#slider_mousewheel').wl_Slider({
-				onSlide:function(values){
-					var _this = $('#slider_mousewheel'),
-						_handler = _this.find('a');
-						_h1 = _handler.eq(0).offset(),
-						_h2 = _handler.eq(1).offset(),
-						value = _h1.left+(_h2.left-_h1.left)/2-_this.offset().left+5;
-					$('#slider_mousewheel_left').width(value);
-					$('#slider_mousewheel_right').width(_this.width()-value);
-				}													  
-			});
-			$('#slider_mousewheel_left, #slider_mousewheel_right').bind('mousewheel',function(event,delta){
-				event.preventDefault();
-				$.alert('Use the Slider above!\nThis is just for visualisation');														
-			});
 		
 		/*----------------------------------------------------------------------*/
 		
@@ -362,53 +327,6 @@ $(document).ready(function() {
 				return false;
 			});
 					
-		/*----------------------------------------------------------------------*/
-
-
-		/*----------------------------------------------------------------------*/
-		/* add some Callbacks to the Form
-		/* http://revaxarts-themes.com/whitelabel/form.html
-		/*----------------------------------------------------------------------*/
-			
-			$content.find('form').wl_Form({
-				onSuccess: function(data, status){
-					if(window.console){
-						console.log(status);
-						console.log(data);
-					};
-					$.msg("Custom Callback on success\nDevelopers! Check your Console!");
-				},
-				onError: function(status, error, jqXHR){
-					$.msg("Callback on Error\nError Status: "+status+"\nError Msg: "+error);
-				}
-			});
-		
-		
-		
-		
-		/*----------------------------------------------------------------------*/
-		/* Gallery with some custom callbacks
-		/* http://revaxarts-themes.com/whitelabel/gallery.html
-		/*----------------------------------------------------------------------*/
-		
-			$content.find('ul.gallery').wl_Gallery({
-				onEdit: function(el, href, title){
-					if(href){
-						$.confirm('For demonstration I use pixlr to edit images.\nDo you like to continue?',function(){
-							window.open('http://pixlr.com/editor/?referrer=whitelabel&image='+escape(href)+'&title='+escape(title)+'');
-						});
-					}
-				},									   
-				onDelete: function(el, href, title){
-					if(href){
-						$.confirm('Do you really like to delete this?',function(){
-							el.fadeOut();
-						});
-					}
-				}									   
-			
-			});
-		
 		/*----------------------------------------------------------------------*/
 		
 		
@@ -508,29 +426,6 @@ $(document).ready(function() {
 				},12000);
 			});
 			
-		/*----------------------------------------------------------------------*/
-		
-		
-		/*----------------------------------------------------------------------*/
-		/* Breadcrumb Demos
-		/* http://revaxarts-themes.com/whitelabel/breadcrumb.html
-		/*----------------------------------------------------------------------*/
-		
-			$('#enablebreadcrumb').click(function(){
-				$('ul.breadcrumb').eq(4).wl_Breadcrumb('enable');
-				$.msg('enabled!');
-			});
-			$('#disablebreadcrumb').click(function(){
-				$('ul.breadcrumb').eq(4).wl_Breadcrumb('disable');
-				$.msg('disabled!');
-			});
-			
-			$('ul.breadcrumb').eq(5).wl_Breadcrumb({
-				onChange:function(element,id){
-					$.msg(element.text()+' with id '+id);
-				}
-			});
-		
 		/*----------------------------------------------------------------------*/
 	
 		/*----------------------------------------------------------------------*/

@@ -1,9 +1,8 @@
-/* Author:
-
-*/
-
-
 $(document).ready(function(){
+
+	$('#userNav').change(function() {
+	window.location = $(':selected').val();
+	});
 	
 	// Run Matt Kersley's jQuery Responsive menu plugin (see plugins.js)
 	if ($.fn.mobileMenu) {
@@ -12,17 +11,12 @@ $(document).ready(function(){
 			topOptionText: 'Choose a page',     // first option text
 			indentString: '&nbsp;&nbsp;&nbsp;'  // string for indenting nested items
 		});
-	}
+	}	
 
 	// Run Mathias Bynens jQuery placeholder plugin (see plugins.js)
 	if ($.fn.placeholder) {
 		$('input, textarea').placeholder();		
 	}
 });
-
-
-
-
-
 
 

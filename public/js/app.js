@@ -32,7 +32,6 @@ $(document).ready(function() {
 				$(contentLocation).css({"display":"block"});
 				
 			} 
-			
 			$(window).trigger('resize.wl_Chart');
 		});
 	});
