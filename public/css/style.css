@@ -95,10 +95,11 @@ li > .base{
 }
 
 .articles p{
-	font-size: 25px;
-	font-weight: bold;
+	font-family: proxima-nova-extra-condensed, arial, helvetica, sans-serif;
+	letter-spacing: -1px;
+	font-weight: 600;
+	font-size: 24px;
 	margin: 0;
-	font-family: proxima-nova-extra-condensed, arial, helvetica, sans-serif; letter-spacing: -1px; font-weight: 600;
 }
 
 .mainNumber p{
