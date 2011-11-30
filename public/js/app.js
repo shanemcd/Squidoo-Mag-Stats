@@ -13,7 +13,7 @@ $(document).ready(function() {
 		//Get all tabs
 		var tab = $(this).children('dd').children('a');
 		tab.click(function(e) {
-		
+			
 			//Get Location of tab's content
 			var contentLocation = $(this).attr("href")
 			contentLocation = contentLocation + "Tab";

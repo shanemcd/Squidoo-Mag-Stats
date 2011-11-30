@@ -1,0 +1,181 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+
+<title>Popular</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width" />
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="charts/css/style.css">
+<link rel="stylesheet" href="css/light/theme.css">
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- JavaScript -->
+<script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+<!-- For iPhone 4 -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+<!-- For iPad 1-->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+<!-- For iPhone 3G, iPod Touch and Android -->
+<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+
+<!--iOS. Delete if not required -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-startup-image" href="img/splash.png">
+
+<!-- http://t.co/y1jPVnT -->
+<link rel="canonical" href="/">
+
+<script type="text/javascript" src="http://use.typekit.com/bmu2nhc.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+
+<body class="clearfix">
+
+<header role="banner">
+	<div id="title">
+		<h1>Squidoo Magazine Stats Dashboard</h1>
+	</div>
+</header>
+
+<div id="wrap" class="clearfix">
+	
+<div role="main">
+	<section id="content" class="clearfix">	
+	
+	<h2>GoodVeg Stats</h2>
+	
+	<dl class="nice tabs">
+    <dd><a href="index.html">Visitors</a></dd>
+    <dd><a href="popular.html" class="active">Popular Content</a></dd>
+    <dd><a href="social.html">Social Engagement</a></dd>
+    <dd><a href="traffic.html">Traffic Sources</a></dd>
+	</dl>	
+	
+	<div id="mobileNav">
+
+	<select id="userNav">
+	    <option value="index.html">Visitors</option>
+	    <option value="popular.html">Popular Content</option>
+	    <option value="social.html">Social Engagement</option>
+	    <option value="traffic.html">Traffic Sources</option>
+	</select>
+	</div>
+		
+<table class="datatable">
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Traffic (Visits)</th>
+			<th>Likes (Article)</th>
+			<th>Likes (Page)</th>
+			<th>Comments (Article)</th>
+			<th>Comments (Page)</th>
+			<th>Shares (Page)</th>
+			<th>Tweets</th>
+			<th>+1 (Google)</th>
+			<th>Social (Total)</th>
+			<th>Time (MM:SS)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Some Page Title</td>
+			<td>939</td>
+			<td>38</td>
+			<td>12</td>
+			<td>52</td>
+			<td>13</td>
+			<td>8</td>
+			<td>0</td>
+			<td>1</td>
+			<td>828</td>
+			<td>03:10</td>
+		</tr>
+		<tr>
+			<td>Some Page Title</td>
+			<td>939</td>
+			<td>38</td>
+			<td>12</td>
+			<td>52</td>
+			<td>13</td>
+			<td>8</td>
+			<td>0</td>
+			<td>1</td>
+			<td>828</td>
+			<td>03:10</td>
+		</tr>
+		<tr>
+			<td>Some Page Title</td>
+			<td>939</td>
+			<td>38</td>
+			<td>12</td>
+			<td>52</td>
+			<td>13</td>
+			<td>8</td>
+			<td>0</td>
+			<td>1</td>
+			<td>828</td>
+			<td>03:10</td>
+		</tr>
+	</tbody>
+</table>
+		
+		
+		
+	</section>
+</div>
+</div>
+
+<!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+  		
+  <!-- some basic functions -->
+  <script src="charts/js/functions.js"></script>
+  <script src="js/app.js"></script>
+  <script src="charts/js/plugins.js"></script>
+  <script src="charts/js/flot.js"></script>
+	<script src="charts/js/datatables.js"></script>
+	<script src="charts/js/wl_Chart.js"></script>
+	<script src="charts/js/wl_Widget.js"></script>
+ 	<script src="charts/js/config.js"></script>
+ 	
+ 	<script src="js/script.js"></script>
+ 	
+	<!-- the script which handles all the access to plugins etc... -->
+	<script defer src="charts/js/script.js"></script>
+	
+	 <!-- end scripts-->
+	
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/imgsizer.js"></script>
+<![endif]-->
+
+<script>
+// iOS scale bug fix
+MBP.scaleFix();
+
+// Respond.js
+yepnope({
+	test : Modernizr.mq('(only all)'),
+	nope : ['js/libs/respond.min.js']
+});
+</script>
+
+
+</body>
+</html>

@@ -56,12 +56,14 @@
 	
 	<h2>GoodVeg Stats</h2>
 	
-	<dl class="nice tabs">
-    <dd><a href="index.html" class="active">Visitors</a></dd>
-    <dd><a href="http://google.com">Popular Content</a></dd>
-    <dd><a href="social.html">Social Engagement</a></dd>
-    <dd><a href="traffic.html">Traffic Sources</a></dd>
-	</dl>	
+<div class="nav">
+      <dl class="nice tabs">
+        <dd><a href="index.html" class="active">Visitors</a></dd>
+        <dd><a href="popular.html">Popular Content</a></dd>
+        <dd><a href="#">Social Engagement</a></dd>
+        <dd><a href="#">Traffic Sources</a></dd>
+      </dl>
+</div>  
 	
 	<div id="mobileNav">
 
@@ -455,18 +457,17 @@
   		
   <!-- some basic functions -->
   <script src="charts/js/functions.js"></script>
-  <script src="js/app.js"></script>
   <script src="charts/js/plugins.js"></script>
   <script src="charts/js/flot.js"></script>
 	<script src="charts/js/datatables.js"></script>
 	<script src="charts/js/wl_Chart.js"></script>
 	<script src="charts/js/wl_Widget.js"></script>
  	<script src="charts/js/config.js"></script>
- 	
  	<script src="js/script.js"></script>
+
  	
 	<!-- the script which handles all the access to plugins etc... -->
-	<script defer src="charts/js/script.js"></script>
+	<script src="charts/js/script.js"></script>
 	
 	 <!-- end scripts-->
 	
@@ -485,6 +486,6 @@ yepnope({
 });
 </script>
 
-
+<script src="js/app.js"></script>
 </body>
 </html>

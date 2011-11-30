@@ -15,10 +15,6 @@
 /* bg/14.png http://ptrn.it/iVpjzW
 /*----------------------------------------------------------------------*/
 
-@import 'jquery.tipsy.css';
-@import 'jquery.datatables.css';
-
-
 .bg01{background-image:url(images/bg/01.png);}
 .bg02{background-image:url(images/bg/02.png);}
 .bg03{background-image:url(images/bg/03.png);}
