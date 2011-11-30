@@ -54,6 +54,7 @@ header h1{
 .panelContent h3{
 	font-size: 1.5em;
 	color: #555;
+	margin-bottom: 10px;
 }
 
 #leftColumn{
