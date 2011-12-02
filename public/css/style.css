@@ -201,6 +201,7 @@ ul.nice.contained.tabs-content li { border-color: #eee; }
 .nice.tabs dd:last-child a { border-right: 1px solid #bbb; }
 .nice.tabs dd a:hover, .tabs a:hover { background: #ccc; color: #444; }
 .nice.tabs dd a.active, .nice.tabs dd a.active:hover, .tabs a.active { margin: 0; background: #fff; color: #000; }
+.tabs a { text-decoration: none; }
 .tabs a:hover { text-decoration: none; }
 
 /*End Tabs*/
