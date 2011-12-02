@@ -159,7 +159,8 @@ p.category { font-size: 1em; font-weight: 600; text-transform: uppercase; margin
 p.stat { font-size: 4em; line-height: 1em; padding: 0;}
 p.description { font-size: .9em; line-height: 1.5em; }
 p.stat span.change { font-size: .35em; letter-spacing: .1em; margin-left: .2em; line-height: .35em; font-weight: bold; }
-span.change { font-size: .7em; }
+span.change { font-size: .5em; }
+span.change.small { font-size: .9em; }
 span.change.up { color: green; }
 span.change.down { color: #c00; }
 
