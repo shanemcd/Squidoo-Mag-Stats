@@ -130,8 +130,7 @@ p.mainNumber{
     -------------------------------------------------- */
     
 .datatable{
-	width: 10%;
-	margin: 0 auto;
+	max-width: 90%;
 }
 
 table { font-family: proxima-nova, arial, helvetica, sans-serif; font-weight: bold; color: #333; background-image:url(images/paper_01.png);
