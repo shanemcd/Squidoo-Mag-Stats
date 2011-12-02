@@ -278,17 +278,30 @@ jQuery.fn.daterangepicker = function(settings){
 	//hide em all
 	rpPickers.css('display', 'none').find('.range-start, .range-end, .btnDone').css('display', 'none');
 	
+	
+	contentDivOffset = $('#content')
+	
+	contentRightPos = contentDivOffset.offset().left;
+		
 	//inject rp
 	jQuery(options.appendTo).append(rp);
 	
 	//wrap and position
 	rp.wrap('<div class="ui-daterangepickercontain"></div>');
 	if(options.posX){
-		rp.parent().css('right', 0);
+		rp.parent().css('right', contentRightPos);
 	}
 	if(options.posY){
 		rp.parent().css('top', options.posY);
 	}
+	
+	function resizer(contentRightPos) {
+		rp.wrap('<div class="ui-daterangepickercontain"></div>');
+		rp.parent().css('right', contentRightPos);
+	}
+	
+	window.onresize = resizer;
+
 
 	//add arrows (only available on one input)
 	if(options.arrows && rangeInput.size()==1){

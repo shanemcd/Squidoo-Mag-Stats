@@ -254,6 +254,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 	margin-top: 20px;
 	padding: 0 10px;
 	margin-bottom: 30px;
+	position: relative;
 }
 
 header{

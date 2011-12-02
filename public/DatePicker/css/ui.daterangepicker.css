@@ -35,6 +35,10 @@
 	cursor: pointer;
 	font-size: 1.1em;
 }
+
+.ui-daterangepicker button.btnDone:active {
+	display: none;
+}
 .ui-daterangepicker ul {
 	width: 17.6em;
 	background: none;
