@@ -154,6 +154,20 @@ table th{
 	text-shadow:0 -1px 0 #ffffff;
 }
 
+/* stats display */
+p.category { font-size: 1em; font-weight: 600; text-transform: uppercase; margin: 0; padding: .5em 0; border-top: 2px solid #ccc; color: #555; }
+p.stat { font-size: 4em; line-height: 1em; padding: 0;}
+p.description { font-size: .9em; line-height: 1.5em; }
+p.stat span.change { font-size: .35em; letter-spacing: .1em; margin-left: .2em; line-height: .35em; font-weight: bold; }
+span.change { font-size: .5em; }
+span.change.up { color: green; }
+span.change.down { color: #c00; }
+
+p.stat.medium { font-size: 2.5em; }
+p.stat.small { font-size: 2em; padding-top: .2em; }
+p.stat.small span.change { font-size: .6em; margin-left: .3em; }
+img.chart.mini { float: left; margin: 1em 1em 0 0; }
+
 /*    --------------------------------------------------
     Tabs
     -------------------------------------------------- */
