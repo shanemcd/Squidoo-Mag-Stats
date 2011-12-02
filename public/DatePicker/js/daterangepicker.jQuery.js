@@ -294,13 +294,6 @@ jQuery.fn.daterangepicker = function(settings){
 	if(options.posY){
 		rp.parent().css('top', options.posY);
 	}
-	
-	function resizer(contentRightPos) {
-		rp.wrap('<div class="ui-daterangepickercontain"></div>');
-		rp.parent().css('right', contentRightPos);
-	}
-	
-	window.onresize = resizer;
 
 
 	//add arrows (only available on one input)
