@@ -221,6 +221,8 @@ ul.contained.tabs-content { padding: 0; }
 ul.contained.tabs-content li { padding: 20px; border: solid 0px #ddd; border-width: 0px 1px 1px 1px; }
 ul.nice.contained.tabs-content li { border-color: #eee; }
 
+h1,h2,h3,h4, p.category, .tabs, #header, span.tab-title, ul.pagination { font-family: proxima-nova, arial, helvetica, sans-serif; }
+
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, caption {
     margin: 0;
     padding: 0;
