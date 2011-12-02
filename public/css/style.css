@@ -134,7 +134,6 @@ table { font-family: proxima-nova, arial, helvetica, sans-serif; font-weight: bo
 
 th{
 	text-align: left !important;
-	padding-right: 20px !important;
 }
 
 table tbody tr td, table thead tr th { padding: 12px 10px; font-size: .85em; line-height: 1em; border: 1px solid #bbb; border-collapse: collapse; text-align: center; }

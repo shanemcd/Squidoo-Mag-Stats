@@ -11,6 +11,11 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="DatePicker/js/jquery-ui-1.7.1.custom.min.js"></script>
+<script type="text/javascript" src="DataPicker/js/daterangepicker.jQuery.js"></script>
+<link rel="stylesheet" href="DatePicker/css/ui.daterangepicker.css" type="text/css" />
+<link rel="stylesheet" href="DatePicker/css/redmond/jquery-ui-1.7.1.custom.css" type="text/css" title="ui-theme" />
+
 
 
 <!--[if (lt IE 9) & (!IEMobile)]>
@@ -46,6 +51,10 @@
 	<div id="title">
 		<h1>Squidoo Magazine Stats Dashboard</h1>
 	</div>
+
+<div style="float: right;">
+<input type="text" value="4/23/99" id="rangeA" />			
+</div>
 </header>
 
 <div id="wrap" class="clearfix">
@@ -448,6 +457,8 @@
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+  
+
   		
   <!-- some basic functions -->
   <script src="charts/js/functions.js"></script>
@@ -458,6 +469,13 @@
 	<script src="charts/js/wl_Widget.js"></script>
  	<script src="charts/js/config.js"></script>
  	<script src="js/script.js"></script>
+ 	<script src="DatePicker/js/daterangepicker.jQuery.js"></script>
+ 	
+ 	<script type="text/javascript">	
+ 		$(function(){
+ 			  $('input').daterangepicker({arrows:true}); 
+ 		 });
+ 	</script>
 
  	
 	<!-- the script which handles all the access to plugins etc... -->
