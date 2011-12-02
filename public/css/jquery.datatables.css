@@ -175,23 +175,23 @@ table.display td.center {
  */
 
 .sorting_asc {
-	background: url(../images/icons/dark/triangle_up.png) no-repeat center right;
+	background: url(./images/icons/dark/triangle_up.png) no-repeat center right;
 }
 
 .sorting_desc {
-	background: url(../images/icons/dark/triangle_down.png) no-repeat center right;
+	background: url(./images/icons/dark/triangle_down.png) no-repeat center right;
 }
 
 .sorting {
-	background: url(../images/icons/dark/triangle_up_down.png) no-repeat center right;
+	background: url(./images/icons/dark/triangle_up_down.png) no-repeat center right;
 }
 
 .sorting_asc_disabled {
-	background: url(../images/icons/dark/triangle_up.png) no-repeat center right;
+	background: url(./images/icons/dark/triangle_up.png) no-repeat center right;
 }
 
 .sorting_desc_disabled {
-	background: url(../images/icons/dark/triangle_down.png) no-repeat center right;
+	background: url(./images/icons/dark/triangle_down.png) no-repeat center right;
 }
 
 

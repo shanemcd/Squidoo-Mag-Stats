@@ -2,6 +2,11 @@
            Custom Styles
 *************************************/
 
+@import 'jquery.tipsy.css';
+@import 'jquery.datatables.css';
+
+
+
 #wrap{
 	max-width: 980px; margin : 0 auto 0;
 }
@@ -56,7 +61,7 @@
 	margin-top: 20px;
 }
 
-.mainNumber p{
+p.mainNumber{
 	font-size: 6em;
 	margin-bottom: 20px;
 	font-family: proxima-nova-extra-condensed, arial, helvetica, sans-serif;
@@ -64,7 +69,7 @@
 	font-weight: 600;
 }
 
-.articles{
+.categoryStat{
 	border-top: 2px solid rgba(0, 0, 0, .4);
 	float: none;
 	width: 100%;
@@ -72,17 +77,17 @@
 	padding-top: 10px;
 }
 
-.articles:first-child { 
+.categoryStat:first-child { 
 	margin-left: 0; 
 }
 
-.articles h3{
+.categoryStat h3{
 	font-size: 16px;
 	color: #555;
 	margin-bottom: 10px;
 }
 
-.articles p{
+.categoryStat p{
 	font-family: proxima-nova-extra-condensed, arial, helvetica, sans-serif;
 	letter-spacing: -1px;
 	font-weight: 600;
@@ -128,7 +133,7 @@
     Tables
     -------------------------------------------------- */
 
-table { font-family: proxima-nova, arial, helvetica, sans-serif; font-weight: bold; color: #333;
+table { font-family: proxima-nova, arial, helvetica, sans-serif; font-weight: bold; color: #333; background-image:url(images/paper_01.png);
 }
 
 th{
@@ -142,6 +147,16 @@ th.segment, td.segment { text-align: left; background: #f5f5f5; }
 table.popular th { font-size: .9em; line-height: 1.2em; }
 table.popular th.content, table.popular td.content { text-align: left; }
 table.popular th span { font-weight: normal; font-size: 0.9em; }
+
+table td, table th{
+	border-color:#dddddd #e7e7e7 #dddddd #e7e7e7;
+}
+table thead tr,table tfoot tr, table th{
+	background-image:url(images/paper_02.png);
+}
+table th{
+	text-shadow:0 -1px 0 #ffffff;
+}
 
 /*    --------------------------------------------------
     Tabs
@@ -253,6 +268,23 @@ audio[controls], canvas, video {
 
 .monospace {
     font-family: "Monaco", Courier New, monospace;
+}
+
+div.chart .legend table{
+	border:0;
+	width:auto;
+}
+div.chart{
+	max-width:100%;
+
+}
+div.chart .legend table td{
+	vertical-align:middle;
+	text-align:center;
+}
+div.chart .legend table td.legendColorBox{
+	opacity:0.6;
+	filter:Alpha(opacity=60);
 }
 
 .clearfix {
@@ -539,9 +571,155 @@ button, input {
     *overflow: visible;
 }
 
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-    cursor: pointer;
+/*----------------------------------------------------------------------*/
+/* Buttons
+/*----------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------*/
+/* Buttons
+/*----------------------------------------------------------------------*/
+
+
+button, a.btn,
+.dataTables_paginate span.paginate_button,
+.dataTables_paginate span.paginate_active{
+	border:1px solid;
+	position:relative;
+	display:inline-block;
+	cursor:pointer;
+	background-repeat:no-repeat;
+	background-position:4px 5px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	text-decoration:none;
+	font-size:11px;
+	font-weight:700;
+	outline:0 none;
+	text-align:center;
+	text-transform:uppercase;
+	margin:2px;
+	min-height:22px;
+	min-width:8px;
+	white-space:pre-line;
+	vertical-align:baseline;
 }
+button.small, a.btn.small{
+	min-height:14px;
+	line-height:14px;
+	font-size:10px;
+	padding:4px 7px;
+}
+button.big, a.btn.big{
+	font-size:14px;
+	padding:12px 16px;
+}
+button.icon, a.btn.icon{
+	padding-left:27px;
+}
+button.small.icon, a.btn.small.icon{
+	padding-left:23px;
+	background-position:0 -2px;
+}
+button.big.icon, a.btn.big.icon{
+	padding-left:27px;
+	background-position:-0 8px;
+}
+a.btn.nt, button.nt{
+	background-position:50% 50%;
+	text-indent:-9999px;
+}
+a.btn.small.nt, button.small.nt{
+	padding-left:12px;
+	padding-right:12px;
+}
+button{
+}
+a.btn{
+	line-height:18px;
+	min-height:18px;
+}
+button:hover, a.btn:hover{
+}
+button:active, a.btn:active,
+.dataTables_paginate span.paginate_active{
+	top:1px;
+}
+
+/*----------------------------------------------------------------------*/
+/* Buttons
+/*----------------------------------------------------------------------*/
+
+
+button, a.btn,
+.dataTables_paginate span.paginate_button,
+.dataTables_paginate span.paginate_active{
+	border-color:#c7c7c7 #b2b2b2 #b2b2b2 #c7c7c7;
+	text-shadow:0 1px 0 rgba(255,255,255,0.7);
+	color:#555555;
+	background-color:#e6e6e6;
+	-webkit-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 2px 5px rgba(255, 255, 255, 0.5), inset 0 -2px 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 2px 5px rgba(255, 255, 255, 0.5), inset 0 -2px 5px rgba(0, 0, 0, 0.1);
+	box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 2px 5px rgba(255, 255, 255, 0.5), inset 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+button.icon, a.btn.icon{
+}
+button{
+}
+a.btn{
+}
+button:hover, a.btn:hover,
+.dataTables_paginate span.paginate_active:hover{
+	background-color:#f1f1f1;
+}
+button:active, a.btn:active,
+.dataTables_paginate span.paginate_active{
+	background-color:#f1f1f1;
+	border-color:#b2b2b2 #c7c7c7 #c7c7c7 #b2b2b2;
+	-webkit-box-shadow:inset 0 2px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:inset 0 2px 1px rgba(0, 0, 0, 0.1);
+	box-shadow:inset 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+button.red, a.btn.red{
+	background-color:#f0a8a8;
+}
+button.red:hover, a.btn.red:hover{
+	background-color:#f0cccc;
+}
+button.green, a.btn.green{
+	background-color:#a2e8a2;
+}
+button.green:hover, a.btn.green:hover{
+	background-color:#c5e8c5;
+}
+button.yellow, a.btn.yellow{
+	background-color:#e8e8a2;
+}
+button.yellow:hover, a.btn.yellow:hover{
+	background-color:#e8e8c5;
+}
+button.blue, a.btn.blue{
+	background-color:#a8f0f0;
+}
+button.blue:hover, a.btn.blue:hover{
+	background-color:#ccf0f0;
+}
+button.pink, a.btn.pink{
+	background-color:#f0a8f0;
+}
+button.pink:hover, a.btn.pink:hover{
+	background-color:#f0ccf0;
+}
+button.purple, a.btn.purple{
+	background-color:#aea8f0;
+}
+button.purple:hover, a.btn.purple:hover{
+	background-color:#cfccf0;
+}
+
+
+
 
 input[type="checkbox"], input[type="radio"] {
     box-sizing: border-box;
@@ -559,6 +737,25 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 textarea {
     overflow: auto;
     vertical-align: top;
+}
+
+input,textarea{
+	width:99%;
+	border:1px solid;
+	padding:4px 2px;
+	margin:0 1px;
+	-webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;
+}
+
+input, textarea, input:invalid, input:required, textarea:required{
+	-webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.2);
+	box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+input:hover,input:focus,textarea:hover,textarea:focus{
+	-webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.2);
+	box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 html {
@@ -796,13 +993,13 @@ h2, h3 {
 	padding-left: 4.4%;
 }
 
-.articles:first-child{
+.categoryStat:first-child{
 	width: 47.8%;
 	float: left;
 	margin-left: 0;
 }
 
-.articles{
+.categoryStat{
 	width: 47.8%;
 	float: left;
 	margin-left: 4.4%;

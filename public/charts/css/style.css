@@ -103,22 +103,7 @@ table td, table th{
 table th{
 	font-weight:700;
 }
-div.chart .legend table{
-	border:0;
-	width:auto;
-}
-div.chart{
-	max-width:100%;
 
-}
-div.chart .legend table td{
-	vertical-align:middle;
-	text-align:center;
-}
-div.chart .legend table td.legendColorBox{
-	opacity:0.6;
-	filter:Alpha(opacity=60);
-}
 
 table.documentation{
 }
