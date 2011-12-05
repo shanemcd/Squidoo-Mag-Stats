@@ -279,9 +279,14 @@ jQuery.fn.daterangepicker = function(settings){
 	rpPickers.css('display', 'none').find('.range-start, .range-end, .btnDone').css('display', 'none');
 	
 	
-	contentDivOffset = $('#content')
+	var contentDivOffset = $('#content')
 	
-	contentRightPos = contentDivOffset.offset().left;
+	var contentRightPos = contentDivOffset.offset().left;
+	
+	$(window).resize( function () {
+		console.log(contentRightPos);
+		$('.ui-daterangepickercontain').css('right', contentDivOffset.offset().left);
+	})
 		
 	//inject rp
 	jQuery(options.appendTo).append(rp);
